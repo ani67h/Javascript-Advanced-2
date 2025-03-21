@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Let's debug the error
+    </h2>
+
+    <p id="error_message"></p>
+    <p id="muri"></p>
+    <p id="hi"></p>
+
+
+    <script>
+        try{
+            var fardin = 2
+            var anindya = fardin + fardin
+            document.write(codingal)
+        }
+        catch(err) {
+            document.getElementById("error_message").innerHTML = err.message;
+            document.getElementById("muri").innerHTML = "Muri khaiyte moja " + anindya + "%"
+        }
+        
+
+
+        kosto = (b,h) => b / h;
+        document.getElementById("hi").innerHTML = "Amr life e kosto " + kosto(1000,10) + "%"
+    </script>
+</body>
+</html>
