@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JSON in JavaScript</h2>
+
+    <p>JSON, which stands for JavaScript Object Notation, is a lightweight, human-readable data-interchange format commonly used for transmitting data in web applications.</p>
+
+    <p id="result"></p>
+
+    <script>
+        var myobj = { name:"Anindya" , age : 15, grade: 8} ;
+        var myJSON = JSON.stringify(myobj) ; 
+        var newobj = JSON.parse(myJSON) ; 
+
+        document.getElementById("result").innerHTML ="Hello world, my name is Prof. Dr. " + newobj.name ; 
+    </script>
+</body>
+</html>
