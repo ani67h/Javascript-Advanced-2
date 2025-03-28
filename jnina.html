@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="heading"></h2>
+<p id="rules"></p>
+
+<p id="q1"></p>
+<p id="a1" style="color: red;"></p>
+
+<p id="q2"></p>
+<p id="a2" style="color: red;"></p>
+
+<script>
+// Setting up the heading and rules
+document.getElementById("heading").innerHTML = "LET'S DO SOME MATHS";
+document.getElementById("rules").innerHTML = 
+    "Basically, the rules are very simple. There will be some basic mathematical statements, and if the statements are true, the answer will be defined. If they are false, the answer will be undefined.";
+
+try {
+    var num1 = 43;
+    var num2 = 65; 
+    var sum = "Question 1: The sum of 43 and 64 is 110.";
+    document.getElementById("q1").innerHTML = sum;
+
+    document.write(Ans); // ERROR: "Ans" is not defined
+} catch (err) {
+    document.getElementById("a1").innerHTML = "Error: " + err.message;
+}
+
+// Now fixing the error handling for Q2 and A2
+var numb1 = 33;
+var numb2 = 69;
+var q2 = "Question 2: The product of 33 and 69 is 5577.";
+
+function summ(a, b) {
+    return a * b;
+}
+
+try {
+    var result2 = summ(numb1, numb2); // Function execution
+
+    // Throw an error if the result is incorrect
+    if (result2 !== 5577) {
+        throw new Error("Undefined");
+    }
+
+    document.getElementById("q2").innerHTML = q2;
+    document.getElementById("a2").innerHTML = "Defined";
+} catch (err) {
+    document.getElementById("q2").innerHTML = q2;
+    document.getElementById("a2").innerHTML = "Error: " + err.message; // Handles the error dynamically
+}
+</script>
+
+</body>
+</html>
+       

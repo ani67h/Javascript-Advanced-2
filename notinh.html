@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="heading"></h2>
+<p id="rules"></p>
+
+<p id="q1"></p>
+<p id="a1" style="color: red;"></p>
+
+<p id="q2"></p>
+<p id="a2" style="color: red;"></p>
+
+<script>
+document.getElementById("heading").innerHTML = "LET'S DO SOME MATHS";
+
+document.getElementById("rules").innerHTML = "Basically, the rules are very simple. There will be some basic mathematical statements, and if the statements are true, the answer will be defined, and if they are false, the answer will be undefined.";
+
+try {
+    var num1 = 43;
+    var num2 = 65;
+    var sum = "Question 1: The sum of 43 and 64 is 110.";
+    document.getElementById("q1").innerHTML = sum;
+
+    // Fix: "Ans" is undefined. Removing document.write(Ans)
+    // Also, "summ" is incorrectly used; should be "num1 + num2"
+    if (num1 + num2 == 3377) {
+        let result2 = "defined"; // This variable is not used, so it does nothing
+    }
+} catch (err) {
+    document.getElementById("a1").innerHTML = err.message;
+}
+
+var q2 = "Question 2: The product of 33 and 69 is 5577.";
+document.getElementById("q2").innerHTML = q2;
+
+function summ(a, b) {
+    return a * b;
+}
+
+try {
+    var result = summ(33, 69); // Calls function to get product
+    var answer = result === 5577 ? "Defined" : "Undefined";
+    document.getElementById("a2").innerHTML = answer;
+} catch (err) {
+    document.getElementById("a2").innerHTML = err.message;
+}
+</script>
+
+</body>
+</html>
