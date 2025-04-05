@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var choice = prompt("Welcome to Ninga Perimeter Calculator. \nPlease enter your choice. \n1.Perimeter of Square. \n2.Perimeter of Rectangle. \n3.Perimeter of Circle. \n4.Perimeter of Triangle. \n5. Perimeter of Parellelogram. \n6.Perimeter of Trapezium.") ;
+
+        if (choice == '1') {
+            var l = prompt("Enter the Length")
+            var result1 = Number(l) * 4
+            alert('The Perimeter is ' + result1)
+        }
+        if (choice == '2') {
+            var l = prompt('Enter the Length')
+            var b = prompt('Enter the Breadth')
+            var result2 = Number(l) + Number(l) + Number(b) + Number(b)
+            alert('The Perimeter is ' + result2)
+        }
+        if (choice == '3') {
+            var r = prompt('Enter the Radius')
+            var result3 = 2 * 3.1416 * Number(r)
+            alert('The Perimeter is ' + result3)
+        }
+        if (choice == '4') {
+            var a = prompt('Enter the length of the first side')
+            var b = prompt('Enter the length of the second side')
+            var c = prompt('Enter the length of the third side')
+            var result4 = Number(a) + Number(b) + Number(c)
+            alert('The Perimeter is ' + result4)
+        }
+        if (choice == '5') {
+            var cb = prompt('Enter the Corresponding Base')
+            var a = prompt('Enter the length of other side')
+            var result5 = Number(cb) + Number(cb) + Number(a) + Number(a)
+            alert('The Perimeter is ' + result5)
+        }
+        if (choice == '6') {
+            var a = prompt('Enter the length of one side')
+            var b = prompt('Enter the length of second side')
+            var c = prompt('Enter the length of third side')
+            var d = prompt('Enter the length of fourth side')
+            var result6 = Number(a) + Number(b) + Number(c) + Number(d)
+            alert('The Perimeter is ' + result6)
+        }
+    </script>
+</body>
+</html>
