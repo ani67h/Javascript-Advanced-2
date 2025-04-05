@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #pink{
+        background-color: deeppink;
+        color: deeppink;
+    }
+    #red{
+        background-color:crimson;
+        color: crimson;
+    }
+    #orange{
+        background-color: orange;
+        color: orange;
+    }
+    #green{
+        background-color: chartreuse;
+        color:chartreuse;
+    }
+    #brown{
+        background-color: brown;
+        color: brown;
+    }
+    #yellow{
+        background-color: gold;
+        color: gold;
+    }
+    #black{
+        background-color: black;
+        color: black;
+    }
+    .buttons{
+        display: flex;
+        gap: 100px;
+        margin-left: 290px;
+    }
+    p{
+        text-align: center;
+    }
+
+</style>
+<body>
+
+    <div class="screen">
+
+     <p>CHOOSE A COLOR CHANGE THE BACKGROUND</p> <br><br><br>
+
+     <div class="buttons">
+    
+    <button onclick="pink()" id="pink">Pink</button>
+    <button onclick="red()" id="red">Red</button>
+    <button onclick="orange()" id="orange">Orange</button>
+    <button onclick="green()" id="green">Green</button>
+    <button onclick="brown()" id="brown">Brown</button>
+    <button onclick="yellow()" id="yellow">Yellow</button>
+    <button onclick="black()" id="black">Black</button>
+
+    </div>
+
+    </div>
+
+    <script>
+
+       function pink() {
+        document.body.id="pink"
+       }
+
+       function red() {
+        document.body.id="red"
+       }
+
+       
+       function orange() {
+        document.body.id="orange"
+       }
+
+       function green() {
+        document.body.id="green"
+       }
+
+       function brown() {
+        document.body.id="brown"
+       }
+
+       function yellow() {
+        document.body.id="yellow"
+       }
+
+       function black() {
+        document.body.id="black"
+       }
+    </script>
+</body>
+</html>
