@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3>JavaScript Promise</h3>
+    <p id="result"></p>
+    <p id="decission"></p>
+
+    <script>
+
+        function myDisplayer(ans) {
+            document.getElementById("result").innerHTML = ans;
+        }
+
+        function product(x,y) {
+            var product = x * y;
+            myDisplayer(product);
+        }
+
+        let myPromise = new Promise(function (myResolve, myReject) {
+            let x = 2;
+
+            if (x == 2) {
+                myResolve("OK")
+                document.getElementById("decission").innerHTML = "Correct, your code is working.";
+            }
+            else {
+                myReject ("Error");
+                document.getElementById("decission").innerHTML ="There might be and issue in your code.";
+            }
+        }
+    ) 
+
+    myPromise.then (
+        function(value) {
+            product (13,7);
+            document.getElementById("decission").innerHTML = "Correct, your code is working.";
+        },
+        function(error) {
+            product (error)
+            document.getElementById("decission").innerHTML ="There might be and issue in your code.";
+        }
+    );
+    </script>
+</body>
+</html>
