@@ -23,7 +23,7 @@ function cos() {
 
 function sin() {
     screen.value = Math.sin(screen.value);
-    document.getElementById("display").innerHTML = sin();
+    document.getElementById("display").innerHTML = screen.value;
 }
 
 function root() {
