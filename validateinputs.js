@@ -16,17 +16,14 @@ function calculate() {
     }
 }
 
-function cos() {
-    screen.value = Math.cos(screen.value);
-    document.getElementById("display").innerHTML = cos();
+function sin() {
+    display.value = Math.sin(display.value);
 }
 
-function sin() {
-    screen.value = Math.sin(screen.value);
-    document.getElementById("display").innerHTML = screen.value;
+function cos() {
+    display.value = Math.cos(display.value);
 }
 
 function root() {
-    screen.value = Math.sqrt(screen.value);
-    document.getElementById("display").innerHTML = root();
+    display.value = Math.sqrt(display.value);
 }
